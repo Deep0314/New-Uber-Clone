@@ -1,8 +1,8 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:uber_clone/core/providers/providers.dart';
-import 'package:uber_clone/domain/models/driver.dart';
-import 'package:uber_clone/domain/models/ride.dart';
-import 'package:uber_clone/domain/models/user.dart';
+import '../../core/providers/providers.dart';
+import '../../domain/models/driver.dart';
+import '../../domain/models/ride.dart';
+import '../../domain/models/user.dart';
 
 final allRidesProvider = FutureProvider.autoDispose<List<Ride>>((ref) async {
   final rideRepo = ref.read(rideRepositoryProvider);
